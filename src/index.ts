@@ -22,9 +22,11 @@ function updateCanvas(arr: number[][], context: CanvasRenderingContext2D) {
       } else if (arr[r][c] == 2 || arr[r][c] == 3) {
         context.fillStyle = "red"
       } else {
-        context.fillStyle = "orange"
+        context.fillStyle = "white"
       }
       context.fillRect(c*cons.CELL_WIDTH, r*cons.CELL_WIDTH,
+        cons.CELL_WIDTH-2, cons.CELL_WIDTH-2)
+      context.strokeRect(c*cons.CELL_WIDTH, r*cons.CELL_WIDTH,
         cons.CELL_WIDTH-2, cons.CELL_WIDTH-2)
     })
 

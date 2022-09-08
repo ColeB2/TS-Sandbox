@@ -6,4 +6,4 @@ export const CANVAS_WIDTH = CANVAS.width;
 export const CANVAS_HEIGHT = CANVAS.height;
 export const DELAY = 100;
 
-export const CELL_WIDTH = 25;
+export const CELL_WIDTH = 40;
